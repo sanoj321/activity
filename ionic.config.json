@@ -1,0 +1,7 @@
+{
+  "name": "jonApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
