@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Storage } from '@ionic/storage';
+import { Calendar } from '@ionic-native/calendar/ngx';
+
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +10,24 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  lel = 'Schwul';
+  Hobby: any;
+  constructor(
+    private storage: Storage,
+    private calendar: Calendar
+    ) {}
 
+
+  zeigetext() {
+    //this.lel = this.Hobby;
+    console.log(this.lel);
+    console.log('shs')
+    this.calendar.createCalendar('MyCalendar').then(
+      (msg) => { console.log(msg); },
+      (err) => { console.log(err); }
+      );
+  };
 }
+
+
+

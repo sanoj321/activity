@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,13 @@
     </ion-toolbar>
   </ion-header>
 
+  <ion-item>
+     <ion-input value="Schwimmen" [(ngModel)]="Hobby"></ion-input> 
+   </ion-item>
+   
+   <ion-button (click)='zeigetext()'> HI </ion-button>
   <app-explore-container name="Tab 1 page"></app-explore-container>
+  {{this.Hobby}}
+
+  
 </ion-content>
