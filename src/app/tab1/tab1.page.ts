@@ -21,7 +21,7 @@ export class Tab1Page {
   zeigetext() {
     //this.lel = this.Hobby;
     console.log(this.lel);
-    console.log('shsdsad')
+    console.log('shsdfsdfssad')
     this.calendar.createCalendar('MyCalendar').then(
       (msg) => { console.log(msg); },
       (err) => { console.log(err); }
